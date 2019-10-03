@@ -28,7 +28,7 @@ public class ExcelRead {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         try{
             FileInputStream file = new FileInputStream(new File("C:\\test2.xls"));// Excel dosya yolu
-            HSSFWorkbook workbook = new HSSFWorkbook(file); // Excel Dosyamizi Temsil Eden Workbook Nesnesi oluşturulur.
+            HSSFWorkbook workbook = new HSSFWorkbook(file); // Excel Dosyamizi Temsil Eden Workbook Nesnesi oluşturulur.(çalışma dosyamızı belirttik)
             HSSFSheet sheet = workbook.getSheetAt(0); // Excel Dosyasının Hangi Sayfası İle Çalışacağımızı Seçtik
             Iterator<Row> rowIterator = sheet.iterator(); //Belirlediğimiz sayfa içerisinde tüm satırları tek tek dolaşacak iteratör nesnesi
             //okunacak satır olduğu sürece
